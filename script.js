@@ -1,7 +1,9 @@
 function getRandomComputerResult() {
 	const options = ['Rock', 'Paper', 'Scissors'];
-	const RandomOption = options[(Math.floor(Math.random() * options.length))];
-	return RandomOption;
+	const RandomOption = Math.floor(Math.random() * options.length);
+	return options[RandomOption];
 }
 
 console.log(getRandomComputerResult());
+
+function hasPlayer
