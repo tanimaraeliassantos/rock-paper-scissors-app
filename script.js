@@ -4,7 +4,8 @@ function getRandomComputerResult() {
 	return options[RandomOption];
 }
 
-console.log(getRandomComputerResult());
+let playerScore = 0;
+let computerScore = 0;
 
 function hasPlayerWonTheRound(player, computer) {
 	if (player === computer) {
