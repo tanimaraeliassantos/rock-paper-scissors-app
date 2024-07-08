@@ -30,5 +30,12 @@ function getRoundResults(userOption) {
 	}
 }
 
-console.log(getRoundResults('Rock'));
-console.log('Player Score: ', playerScore, 'Computer Score: ', computerScore);
+const playerScoreSpanElement = document.getElementById('player-score');
+const computerscoreSpanElement = document.getElementById('computer-score');
+const roundResultsMsg = document.getElementById('results-msg');
+
+function showResults(userOption) {
+	roundResultsMsg.innerText = getRoundResults(userOption);
+	computerscoreSpanElement.innerText = computerScore;
+	playerScoreSpanElement.innerText = playerScore;
+}
