@@ -31,7 +31,7 @@ function getRoundResults(userOption) {
 }
 
 const playerScoreSpanElement = document.getElementById('player-score');
-const computerscoreSpanElement = document.getElementById('computer-score');
+const computerScoreSpanElement = document.getElementById('computer-score');
 const roundResultsMsg = document.getElementById('results-msg');
 const winnerMsgElement = document.getElementById('winner-msg');
 const optionsContainer = document.querySelector('.options-container');
@@ -39,7 +39,7 @@ const resetGameBtn = document.getElementById('reset-game-btn');
 
 function showResults(userOption) {
 	roundResultsMsg.innerText = getRoundResults(userOption);
-	computerscoreSpanElement.innerText = computerScore;
+	computerScoreSpanElement.innerText = computerScore;
 	playerScoreSpanElement.innerText = playerScore;
 
 	if (playerScore >= 2) {
@@ -57,7 +57,7 @@ function resetGame() {
 	playerScore = 0;
 	computerScore = 0;
 	playerScoreSpanElement.innerText = '0';
-	computerscoreSpanElement.innerText = '0';
+	computerScoreSpanElement.innerText = '0';
 	resetGameBtn.style.display = 'none';
 	optionsContainer.style.display = 'block';
 	winnerMsgElement.innerText = '';
