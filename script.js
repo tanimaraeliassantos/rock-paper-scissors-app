@@ -52,3 +52,14 @@ function showResults(userOption) {
 		optionsContainer.style.display = 'none';
 	}
 }
+
+function resetGame() {
+	playerScore = 0;
+	computerScore = 0;
+	playerScoreSpanElement.innerText = '0';
+	computerscoreSpanElement.innerText = '0';
+	resetGameBtn.style.display = 'none';
+	optionsContainer.style.display = 'block';
+	winnerMsgElement.innerText = '';
+	roundResultsMsg.innerText = '';
+}
