@@ -42,11 +42,11 @@ function showResults(userOption) {
 	computerScoreSpanElement.innerText = computerScore;
 	playerScoreSpanElement.innerText = playerScore;
 
-	if (playerScore >= 2) {
+	if (playerScore > 2) {
 		winnerMsgElement.innerText = 'Player has won the game!';
 		resetGameBtn.style.display = 'block';
 		optionsContainer.style.display = 'none';
-	} else if (computerScore >= 2) {
+	} else if (computerScore > 2) {
 		winnerMsgElement.innerText = 'Computer has won the game!';
 		resetGameBtn.style.display = 'block';
 		optionsContainer.style.display = 'none';
